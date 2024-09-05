@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GeofenceApp</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_results_maps">ResultsMapsActivity</string>
+</resources>

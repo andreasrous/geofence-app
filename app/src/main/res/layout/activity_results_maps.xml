@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/resultsMapsActivityLayout">
+
+    <fragment
+        android:id="@+id/map2"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonContainer"
+        android:layout_marginBottom="-81dp"
+        tools:context=".ResultsMapsActivity" />
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp">
+
+        <ToggleButton
+            android:id="@+id/restartButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:textOn="Running"
+            android:textOff="Paused"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+        <Button
+            android:id="@+id/returnButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="64dp"
+            android:text="Return"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:foreground="?attr/selectableItemBackgroundBorderless" />
+    </LinearLayout>
+</RelativeLayout>
